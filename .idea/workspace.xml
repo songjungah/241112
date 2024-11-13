@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Day21/BoardService_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day21/BoardService_2.java" afterDir="false" />
+    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241112 Day21">
+      <change afterPath="$PROJECT_DIR$/src/Day22/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day22/BoardService_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day22/BoardService_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day22/BoardService_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day22/BoardService_6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day22/NewBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +28,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "songjungah"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/songjungah/241112.git",
+    "accountId": "2c44a5a9-7d63-411e-bda3-f543e0e776db"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2okOh1wQH9ph6gngss2j5rYHUfw" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -37,12 +54,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BoardService_1.executor": "Run",
+    "Application.BoardService_3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BoardService_3">
     <configuration name="BoardService_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day21.BoardService_1" />
       <module name="241112" />
@@ -56,8 +77,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BoardService_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day22.BoardService_3" />
+      <module name="241112" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day22.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BoardService_3" />
         <item itemvalue="Application.BoardService_1" />
       </list>
     </recent_temporary>
@@ -71,6 +106,19 @@
       <option name="presentableId" value="Default" />
       <updated>1731410222864</updated>
     </task>
+    <task id="LOCAL-00001" summary="241112 Day21">
+      <option name="closed" value="true" />
+      <created>1731415826478</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731415826478</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="241112 Day21" />
+    <option name="LAST_COMMIT_MESSAGE" value="241112 Day21" />
   </component>
 </project>
