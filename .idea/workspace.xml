@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241112 Day21">
-      <change afterPath="$PROJECT_DIR$/src/Day22/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day22/BoardService_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day22/BoardService_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day22/BoardService_5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day22/BoardService_6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day22/NewBoard.java" afterDir="false" />
+    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241113 Day22">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/0_MVC" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/BoardService_6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/BoardService_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/Board_ex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/boardservice_8mvc/AppStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/boardservice_8mvc/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/boardservice_8mvc/model/BoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/boardservice_8mvc/model/BoardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day23/boardservice_8mvc/view/BoardView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,18 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "songjungah"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;songjungah&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/songjungah/241112.git",
-    "accountId": "2c44a5a9-7d63-411e-bda3-f543e0e776db"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/songjungah/241112.git&quot;,
+    &quot;accountId&quot;: &quot;2c44a5a9-7d63-411e-bda3-f543e0e776db&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -55,7 +60,10 @@
   "keyToString": {
     "Application.BoardService_1.executor": "Run",
     "Application.BoardService_3.executor": "Run",
+    "Application.BoardService_6.executor": "Run",
+    "Application.BoardService_7.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
@@ -63,7 +71,12 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BoardService_3">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\송정아\241112\src\Day23" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BoardService_7">
     <configuration name="BoardService_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day21.BoardService_1" />
       <module name="241112" />
@@ -90,8 +103,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BoardService_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day23.BoardService_6" />
+      <module name="241112" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day23.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardService_7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day23.BoardService_7" />
+      <module name="241112" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day23.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BoardService_7" />
+        <item itemvalue="Application.BoardService_6" />
         <item itemvalue="Application.BoardService_3" />
         <item itemvalue="Application.BoardService_1" />
       </list>
@@ -114,11 +155,20 @@
       <option name="project" value="LOCAL" />
       <updated>1731415826478</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="241113 Day22">
+      <option name="closed" value="true" />
+      <created>1731502328434</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731502328434</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="241112 Day21" />
-    <option name="LAST_COMMIT_MESSAGE" value="241112 Day21" />
+    <MESSAGE value="241113 Day22" />
+    <option name="LAST_COMMIT_MESSAGE" value="241113 Day22" />
   </component>
 </project>
