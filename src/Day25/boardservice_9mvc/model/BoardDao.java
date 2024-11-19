@@ -10,7 +10,7 @@ import java.util.Scanner;
         - 조건 : 파일 입출력을 활용하여 프로그램이 종료되고 다시 실행 했을 때 영구 저장 되도록 하시오.
 
     [생각해보기]
-    1. txt 메모장은 문자열만 저장되는 윈도우 프로그램의 확장자
+    1. txt 메모장은 "문자열"만 저장되는 윈도우 프로그램의 확장자
     2. 게시물들( ArrayList<BoardDto> ) 저장을 하기 위해서는 변환이 필요하다. / java(객체지향 O)
     ※ 문제점 발견 : 서로 다른 언어/프로그램들 간의 데이터를 주고 받으려면 형식/타입이 같으면 좋을텐데.
         - 관례적으로 사용되는 타입 : CSV, JSON, XML 파일 타입을 주로 사용함
@@ -26,9 +26,9 @@ import java.util.Scanner;
     2. 하나의 문자열로 필드명을 제외한 필드값들을 , 쉼표로 구분하여 문자열로 반환 : "안녕하세요, 유재석, 1234"
 
     [여러개 게시물 객체가 존재 했을 때]
-    Point 01 : 필드간의 구분을 , 쉼표로 한다.
+    Point 01 : 객체내 필드간의 구분을 , 쉼표로 한다.
     Point 02 : 객체간의 구분을 \n 으로 한다.
-        ex) "안녕하세요, 유재석, 1234 \n 그래 안녕, 강호동, 4567"
+        ex) 만약 게시물이 2개 일 때  "안녕하세요, 유재석, 1234 \n 그래 안녕, 강호동, 4567"
 
 */
 
@@ -36,7 +36,30 @@ public class BoardDao { // 주로 싱글톤
 
     // 싱글톤
     private static BoardDao boardDao = new BoardDao();
-    private BoardDao() {}
+    private BoardDao() {
+
+        // 만약에 파일로드 하는데, 파일이 존재하지 않으면
+        // [1] 파일 경로에 따른 파일 객체화
+        File file = new File("./src/Day25/boardservice_9mvc/data.txt");
+
+        // [2] 객체화 한 파일이 존재 하는지 확인
+        if (file.exists()) {    // 지정한 경로에 파일이 있다.
+
+            // 싱글톤(static) 이 생성될 때(프로그램이 실행될 때)
+            fileLoad();     // 파일 로드
+
+        } else {    // 지정한 경로에 파일이 없다.
+
+            try {
+                file.createNewFile();   // .createNewFile() : 지정한 경로에 파일 생성 함수
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+    }
     public static BoardDao getInstance() {
         return boardDao;
     }
@@ -60,7 +83,9 @@ public class BoardDao { // 주로 싱글톤
         return boardDB;
     }
 
+
     // ==================== 영구저장을 위한 게시물들을 파일에 저장 기능 ====================  //
+
     public void fileSave() {    // 게시물 등록을 성공했을 때 지정한 함수 사용/호출
 
         // 여러개 게시물들을[ArrayList<BoardDto> boardDB] 하나의 문자열[String/CSV] 로 표현하는 방법
@@ -68,7 +93,7 @@ public class BoardDao { // 주로 싱글톤
         String outStr = "";
         
         // 2. 반복문을 이용한 모든 게시물들을 순회/반복
-        for (int index = 0; index <= boardDB.size(); index++) { // 리스트 객체내 0번 인덱스부터 마지막 인덱스까지 반복
+        for (int index = 0; index <= boardDB.size()-1; index++) { // 리스트 객체내 0번 인덱스부터 마지막 인덱스까지 반복
 
             // 3. index 번째의 게시물
             BoardDto boardDto = boardDB.get(index);
@@ -107,7 +132,8 @@ public class BoardDao { // 주로 싱글톤
 
 
     // ==================== 영구저장 된 파일의 게시물들을 가져오는 기능 ====================  //
-    public void fileLoad() {
+
+    public void fileLoad() {    // 프로그램이 실행 되었을 때 1번만 실행 > Dao 객체(싱글톤) 생성될 때 메모장(txt) 불러오기를 한다.
 
         try {
 
@@ -125,6 +151,31 @@ public class BoardDao { // 주로 싱글톤
             String inStr = new String(bytes);
 
             // [5] 활용과제 : 파일로부터 읽어온 문자열의 게시물 정보들을 다시 ArrayList<BoardDto> boardDB 에 저장하시오.
+            // 목표 : 파일로 가져온 문자열내 저장된 여러개 게시물들을 객체화하고 게시물 객체를 리스트에 담자.
+
+            // EX) "안녕하세요, 유재석, 1234 \n 그래안녕, 강호동, 4567"
+            // [1] 객체 구분문자(\n:임의), 문자열 분해, "문자열".split("기존문자") : 문자열내 기존문자 기준으로 분해 후 배열로 반환
+                // inStr = "안녕하세요, 유재석, 1234 \n 그래안녕, 강호동, 4567"
+                // inStr.split("\n") -> ["안녕하세요, 유재석, 1234", "그래안녕, 강호동, 4567"]
+            String[] objStr = inStr.split("\n");
+
+            // [2] 객체 내 필드 구분 문자 (, :쉼표)
+            for (int i = 0; i <= objStr.length-1; i++) {     // 마지막 줄을 제외하기 위해 -1을 해주는 것
+                
+                // [3] 1개의 객체 필드 값들 가져오기
+                String obj = objStr[i];
+
+                // [4] 문자열로 된 필드값들을 객체로 변환하기
+                String[] field = obj.split(",");
+                String content = field[0];
+                String writer = field[1];
+                int pwd = Integer.parseInt(field[2]);     // String 타입을 int 로 변환하는 방법 > Integer.parseInt("문자열")
+                BoardDto boardDto = new BoardDto(content, writer, pwd);
+
+                // [5] 리스트에 담기
+                boardDB.add(boardDto);
+
+            }
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

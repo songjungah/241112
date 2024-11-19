@@ -75,8 +75,9 @@ public class BoardView {    // 주로 싱글톤
         
         // 출력
         for (int index = 0; index <= result.size()-1; index++) {
-            System.out.print("게시내용 : " + result.get(index).getContent());
-            System.out.print("작성자 : " + result.get(index).getWriter());
+            System.out.println("게시내용 : " + result.get(index).getContent());
+            System.out.println("작성자 : " + result.get(index).getWriter());
+            System.out.println("비밀번호 : " + result.get(index).getPwd());
         }
 
     }
