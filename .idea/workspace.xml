@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241118 Day25">
-      <change afterPath="$PROJECT_DIR$/src/Day25/241119_과제" afterDir="false" />
+    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241119 Day26">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day25/boardservice_9mvc/model/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day25/boardservice_9mvc/model/BoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day25/boardservice_9mvc/view/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day25/boardservice_9mvc/view/BoardView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,29 +42,29 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_7.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day25.boardservice_9mvc.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileExample3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/송정아/241112/src/Day25&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AppStart.executor": "Run",
+    "Application.BoardService_1.executor": "Run",
+    "Application.BoardService_3.executor": "Run",
+    "Application.BoardService_6.executor": "Run",
+    "Application.BoardService_7.executor": "Run",
+    "Application.Day25.boardservice_9mvc.AppStart.executor": "Run",
+    "Application.Day26.TodoList.AppStart.executor": "Run",
+    "Application.FileExample.executor": "Run",
+    "Application.FileExample3.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/송정아/241112/src/Day25",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\송정아\241112\src\Day25" />
@@ -76,7 +73,7 @@
       <recent name="C:\송정아\241112\src\Day23" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day25.boardservice_9mvc.AppStart">
+  <component name="RunManager" selected="Application.Day26.TodoList.AppStart">
     <configuration name="AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day23.boardservice_8mvc.AppStart" />
       <module name="241112" />
@@ -90,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardService_7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day23.BoardService_7" />
+    <configuration name="Day25.boardservice_9mvc.AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day25.boardservice_9mvc.AppStart" />
       <module name="241112" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day23.*" />
+          <option name="PATTERN" value="Day25.boardservice_9mvc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day25.boardservice_9mvc.AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day25.boardservice_9mvc.AppStart" />
+    <configuration name="Day26.TodoList.AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day26.TodoList.AppStart" />
       <module name="241112" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day25.boardservice_9mvc.*" />
+          <option name="PATTERN" value="Day26.TodoList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day26.TodoList.AppStart" />
         <item itemvalue="Application.Day25.boardservice_9mvc.AppStart" />
         <item itemvalue="Application.FileExample3" />
         <item itemvalue="Application.FileExample" />
         <item itemvalue="Application.AppStart" />
-        <item itemvalue="Application.BoardService_7" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731934201284</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="241119 Day26">
+      <option name="closed" value="true" />
+      <created>1732015959581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732015959581</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,6 +215,7 @@
     <MESSAGE value="241114 Day23" />
     <MESSAGE value="241115 Day24" />
     <MESSAGE value="241118 Day25" />
-    <option name="LAST_COMMIT_MESSAGE" value="241118 Day25" />
+    <MESSAGE value="241119 Day26" />
+    <option name="LAST_COMMIT_MESSAGE" value="241119 Day26" />
   </component>
 </project>
