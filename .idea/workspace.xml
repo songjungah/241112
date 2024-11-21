@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241119 Day26">
+    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241120 Day27">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,27 +44,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AppStart.executor": "Run",
-    "Application.BoardService_1.executor": "Run",
-    "Application.BoardService_3.executor": "Run",
-    "Application.BoardService_6.executor": "Run",
-    "Application.BoardService_7.executor": "Run",
-    "Application.Day25.boardservice_9mvc.AppStart.executor": "Run",
-    "Application.Day26.TodoList.AppStart.executor": "Run",
-    "Application.FileExample.executor": "Run",
-    "Application.FileExample3.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/송정아/241112/src/Day25",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AppStart.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BoardService_1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BoardService_3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BoardService_6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BoardService_7.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day25.boardservice_9mvc.AppStart.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day26.TodoList.AppStart.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FileExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FileExample3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/송정아/241112/src/Day25&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\송정아\241112\src\Day25" />
@@ -206,7 +206,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732015959581</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="241120 Day27">
+      <option name="closed" value="true" />
+      <created>1732106997877</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732106997877</updated>
+    </task>
+    <task id="LOCAL-00008" summary="241120 Day27">
+      <option name="closed" value="true" />
+      <created>1732107010916</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732107010916</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -216,6 +232,7 @@
     <MESSAGE value="241115 Day24" />
     <MESSAGE value="241118 Day25" />
     <MESSAGE value="241119 Day26" />
-    <option name="LAST_COMMIT_MESSAGE" value="241119 Day26" />
+    <MESSAGE value="241120 Day27" />
+    <option name="LAST_COMMIT_MESSAGE" value="241120 Day27" />
   </component>
 </project>
