@@ -1,0 +1,32 @@
+public class BoardDao { // 주로 싱글톤
+
+    private Connection connection;  // DB 연동 인터페이스 > DB 연동 결과를 가지고 있어서 DB 조작이 가능한 인터페이스
+
+    // 싱글톤
+    private static BoardDao boardDao = new BoardDao();
+    private BoardDao() {
+
+        // DB 연동시 필요한 코드 2줄
+        try {
+            // [1] 외부라이브러리(JDBM) 폴더 내 com폴더 > mysql폴더 > cj폴더 > jdbc폴더 > Driver 클래스 호출   * 일반예외
+            // forName() : 특정한 클래스를 호출하는데 사용되는 함수 > 만일 클래스가 존재하지 않으면 어떻게 해야 하는지 일반 예외에서 처리
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            // [2] DB 연동 인터페이스 만들기, DriverManager.getConnection("MYSQLSERVER_URL/DB명", "계정명", "비밀번호");
+            // DriverManager.getConnection() : DB SERVER 와 연동을 성공 했을 때 연동된 결과의 객체를 반환
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb1122", "root", "1234");
+
+            // [3] DB 연동 확인
+            System.out.println("[3] DB 연동 성공");
+
+            // 연동에 실패하는 이유 : 1. 프로젝트에 JDBC 라이브러리 등록을 하지 않았다.    2. DB연동 url 경로 "jdbc:mysql://localhost:3306/mydb1122" 오타 확인
+
+
+        } catch (ClassNotFoundException e) {
+            e.getException();
+
+        } catch (SQLException e) {
+            e.getSQLState();
+        }
+
+    }
