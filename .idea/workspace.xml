@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241121 Day28">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_9_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day29/DB 연동 방법" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day29/boardservice10mvc/AppStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day29/boardservice10mvc/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day29/boardservice10mvc/model/BoardDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day29/boardservice10mvc/model/BoardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day29/boardservice10mvc/view/BoardView.java" afterDir="false" />
+    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241122 Day29">
+      <change afterPath="$PROJECT_DIR$/src/Day30/boardservice_10mvc/AppStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day30/boardservice_10mvc/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day30/boardservice_10mvc/model/BoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day30/boardservice_10mvc/model/BoardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day30/boardservice_10mvc/view/BoardView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/241112.iml" beforeDir="false" afterPath="$PROJECT_DIR$/241112.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/송정아/241112/src/Day29",
+    "last_opened_file_path": "C:/송정아/241112/src/Day30",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -76,6 +73,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\송정아\241112\src\Day30" />
       <recent name="C:\송정아\241112\src\Day29" />
       <recent name="C:\송정아\241112\src\Day25" />
     </key>
@@ -83,7 +81,20 @@
       <recent name="C:\송정아\241112\src\Day23" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day29.boardservice10mvc.AppStart">
+  <component name="RunManager" selected="Application.AppStart">
+    <configuration name="AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day30.boardservice_10mvc.AppStart" />
+      <module name="241112" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day30.boardservice_10mvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day25.boardservice_9mvc.AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day25.boardservice_9mvc.AppStart" />
       <module name="241112" />
@@ -123,19 +134,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day25.FileExample" />
-      <module name="241112" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Day25.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FileExample3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day25.FileExample3" />
       <module name="241112" />
@@ -151,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppStart" />
         <item itemvalue="Application.Day29.boardservice10mvc.AppStart" />
         <item itemvalue="Application.Day26.TodoList.AppStart" />
         <item itemvalue="Application.Day25.boardservice_9mvc.AppStart" />
         <item itemvalue="Application.FileExample3" />
-        <item itemvalue="Application.FileExample" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732193366099</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="241122 Day29">
+      <option name="closed" value="true" />
+      <created>1732279816183</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732279816183</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -252,6 +258,7 @@
     <MESSAGE value="241119 Day26" />
     <MESSAGE value="241120 Day27" />
     <MESSAGE value="241121 Day28" />
-    <option name="LAST_COMMIT_MESSAGE" value="241121 Day28" />
+    <MESSAGE value="241122 Day29" />
+    <option name="LAST_COMMIT_MESSAGE" value="241122 Day29" />
   </component>
 </project>
