@@ -1,6 +1,7 @@
 [ JDBC ]
     1. JAVA DATABASE CONNECT : 자바 데이터베이스 연동
 
+
     2. 현재 JAVA 프로젝트의 jdbc 라이브러리 등록하기, ★프로젝트마다 진행해야함, PC변경 되거나 프로젝트 경로 변경될 때 진행
         2-1) mysql-connector-j-9.1.0.jar (다운로드)
         2-2) 현재 java 프로젝트내 임의 폴더내 넣기
@@ -8,10 +9,12 @@
              가장 하단에 [라이브러리 추가] 클릭
         2-4) [OK]
 
+
     3.
         - DAO [Data Access Object]         : 데이터 접근 객체, 파일/DB 에 접근하여 데이터를 가져올 때 사용
         - DTO [Data Transfer Object]       : 데이터 이동 객체, 파일/DB 에 접근하여 가져온 데이터를 VIEW 까지 이동하기 위해 사용
         - VO [Value Object]                : 값 자체 객체, (읽기모드/setter 없음)
+
 
     4. DAO 에서 DB 연동
         4-1) 연동할 JDBC 라이브러리 클래스 로드하기
@@ -31,6 +34,7 @@
     - 각 게임(객체) 로 생각하고 각 게임(객체)를 인터페이스에 대입하여 서로 다른 게임을 하나의 인터페이스로 조작하기 위해서
     - 모든 PC 게임의 A,B,C 키는 존재한다., 하지만 서로 다른 키는 서로 다른 행위를 한다.
 
+
     5. JDBC 핵심 인터페이스 3개
         1. Connection 인터페이스 : DB와 연동 성공한 객체 정보를 가지고 조작/기능/메소드 제공하는 인터페이스
             Connect conn = DriverManager.getConnection(mysql)
@@ -46,8 +50,8 @@
                 -> ? : 기재된 SQL 내 ?의 순서번호
                 -> value : 앞 매개변수 ?에 대입할 값
 
-            (2) ps.executeUpdate() : 현재 기재된 SQL 를 실행하는 함수
-            (3) ResultSet rs = ps.executeQuery() : 현재 기재된 SQL를 실행하고 조회된 결과를 반환함수
+            (2) ps.executeUpdate() : 현재 기재된 SQL 를 실행하는 함수 / insert, delete, update
+            (3) ResultSet rs = ps.executeQuery() : 현재 기재된 SQL를 실행하고 조회된 결과를 반환함수, select(결과다수)
 
         3.  ResultSet 인터페이스 : 실행된 SQL 조회 결과를 조작하는 인터페이스
             (1) rs.next() : 조회된 결과를 다음 레코드 이동 함수

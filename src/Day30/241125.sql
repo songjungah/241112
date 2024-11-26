@@ -29,3 +29,6 @@ insert into board(content, writer, pwd) values ('안녕하세요', '유재석', 
 
 # [ console 입력받은 데이터가 table 에 잘 insert 되었는지 확인 ]
 select * from board;
+# select : select 필드명, 필드명 from 테이블명
+# select : select * from 테이블명
+# select : select * from where 테이블명 

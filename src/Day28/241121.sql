@@ -24,7 +24,7 @@
     [ 데이터 타입 ] : 테이블 생성 시 필드/속성 의 데이터 타입
 		1) 정수	TINYINY, SMALLINT, MEDIUMINT, INT, BIGINT
         2) 실수	FLOAT, DOUBLE, DECIMAL(문자)
-        3) 문자	CHAR(), VARCHAR(), 
+        3) 문자	CHAR(), VARCHAR(), longtext
         4) 날짜/시간	DATE, TIME, DATETIME
         5) 논리	BOOL
 */
