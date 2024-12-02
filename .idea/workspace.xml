@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241126 Day31">
+    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241128 Day32">
+      <change afterPath="$PROJECT_DIR$/src/Day34/241202_정리" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day34/241202_조별과제정리" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,29 +46,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_7.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day25.boardservice_9mvc.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day26.TodoList.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day29.boardservice10mvc.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day31.boardservice_11mvc.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileExample3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/송정아/241112/src/Day31&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AppStart.executor": "Run",
+    "Application.BoardService_1.executor": "Run",
+    "Application.BoardService_3.executor": "Run",
+    "Application.BoardService_6.executor": "Run",
+    "Application.BoardService_7.executor": "Run",
+    "Application.Day25.boardservice_9mvc.AppStart.executor": "Run",
+    "Application.Day26.TodoList.AppStart.executor": "Run",
+    "Application.Day29.boardservice10mvc.AppStart.executor": "Run",
+    "Application.Day31.boardservice_11mvc.AppStart.executor": "Run",
+    "Application.FileExample.executor": "Run",
+    "Application.FileExample3.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/송정아/241112/src/Day31",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\송정아\241112\src\Day31" />
@@ -259,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732625186154</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="241128 Day32">
+      <option name="closed" value="true" />
+      <created>1732798087420</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732798087420</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -274,6 +285,7 @@
     <MESSAGE value="241122 Day29" />
     <MESSAGE value="241125 Day30" />
     <MESSAGE value="241126 Day31" />
-    <option name="LAST_COMMIT_MESSAGE" value="241126 Day31" />
+    <MESSAGE value="241128 Day32" />
+    <option name="LAST_COMMIT_MESSAGE" value="241128 Day32" />
   </component>
 </project>
