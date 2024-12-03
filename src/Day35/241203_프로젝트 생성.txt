@@ -1,0 +1,17 @@
+- 한명은 지금 따라하면서 이번 미니프로젝트의 프로젝트 사용
+- 한명이 git 관리
+
+[1] JAVA 프로젝트 생성
+	1. NEW PROJECT 
+	2. NAME : [프로젝트명], kor2024_javaProject
+		- 주로 웹사이트명으로 프로젝트명 사용
+		- create git repository 체크안함
+	3. build system : inellij
+	4. jdk : 17
+	* add sample code 체크 안함
+	[create]
+
+[2] 간단한 프로젝트에 필요한 라이브러리와 패키지 구성
+	1. 라이브러리  : JDBC 라이브러리
+
+	2. MVC 패턴에 따른 패키지(폴더) 구성
