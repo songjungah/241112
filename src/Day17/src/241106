@@ -1,0 +1,140 @@
+지네릭스
+1. 지네릭스란? - JDK5
+   1) 지네릭 클래스
+      - 클래스에 지네릭 타입 정의
+      class Box<T, U> {
+
+      }
+
+      - ★T, U 타입은 객체 생성시 결정!
+
+   2) 지네릭 메서드
+      - 메서드에 지네릭 타입 정의
+      - 와일드 카드 > 지네릭 메서드
+      - public <T, U> void method(T t, U u) {
+
+      }
+
+      - ★T, U 타입은 메서드가 호출 되었을 때 결정!
+
+      * Box<Apple, Grape> box = new Box<>();	    // classBox<T, U>
+      * box.method("ABC", Integer.valueOf("123"))    // T - String, U - Integer
+
+
+※ 참고)
+- 다양한 자료형을 수용 -> Object 클래스 사용
+   * 단점 1) 타입 안정성 X	2) 형변환의 번거로움
+
+
+2.지네릭 클래스의 선언
+
+* 컴파일 시
+public class Box {
+   private Object item;
+
+   public void setitem(Object item) {
+	this.item = item;
+   }
+
+   public Object getitem( ) {
+	return item;
+   }
+}
+=> 컴파일 완료
+-> ★자료형이 결정되는 시점 : 객체를 생성할 때 타입 힌트<Apple> 를 가지고 알 수 있다!
+
+
+3. 지네릭스의 용어
+   1) 지네릭 클래스
+      class Box<T> { ... }
+   2) 타입변수 T
+   3) 원시타입 Box
+
+4.
+
+5. 지네릭 클래스의 객체 생성과 사용
+
+6. 제한된 지네릭 클래스
+   <T extends 타입> -> T는 타입의 하위 클래스
+   <T extends 타입1 & 타입2> -> T는 타입1의 하위 클래스이고 타입2 인터페이스의 구현 클래스
+
+7. 와일드 카드
+   <?> : <? extends Object> : ? Object의 하위 클래스 - 모든 자료형 / 메서드 호출시에 자료형 결정
+
+   <? extends 타입> -> T는 타입의 하위 클래스 : 타입으로 상한 제한
+   ex) <? extends Fruit> : Fruit, Apple, Grape
+
+   <? super 타입> -> T는 타입의 상위 클래스 : 타입으로 하한 제한
+   ex) <? super Apple> : Apple, Fruit, Object
+
+
+8. 지네릭 메서드
+   - 메서드가 호출될 때 자료형 결정
+
+9. 지네릭 타입의 제거
+
+
+
+
+열거형(enums)
+1. 열거형이란?
+   - 특수 목적 클래스
+   - 상수만을 열거하기 위한 클래스
+
+2. 열거형 정의와 사용
+   enum 클래스명 {
+      상수, 상수, 상수 ...	// 열거하듯 > 대문자로 쓰기!
+   }
+
+3. 모든 열거형의 상위 클래스 - java.lang.Enum
+   1) Enum 클래스에 정의된 메서드
+    - String name( ) : 상수명을 문자열로 반환
+       : 자바 객체인 enum 상수 -> 문자 -> 다른 플랫폼에 전달 목적
+
+   - int ordinal( ) : 상수가 정의된 순서 번호
+		내부에서만 주로 사용! (정의된 위치를 바꾸면 숫자가 변경됨!)
+
+   - static Enum.valueOf(Class clazz, String name)
+      : 다른 플랫폼 -> 문자열 -> 자바 객체 enum 상수로 변환
+
+   2) 컴파일러가 자동으로 추가해주는 메서드
+   - static T vauleOf(String name) : 문자열 -> enum 상수로 변환
+   - static T[ ] values( ) : enum 상수에 정의된 모든 상수를 배열 형태로 변환
+
+4. 열거형에 멤버 추가하기
+
+5. 열거형에 추상메서드 추가하기
+
+
+※ public abstract class Transportation extends java.lang.Enum<Transportation> {
+   public static final Transportation BUS = new Transportation( ) { };
+   public static final Transportation SUBWAY = new Transportation( ) { };
+   public static final Transportation TAXT = new Transportation( ) { };
+
+   private Transportation(...) { }	// 객체를 여러개 만들 수 있으면 Enum 상수로써 역할이 불가
+				// 상수는 유일무이 해야한다!
+}
+
+
+* enum 상수의 비교 == (주소)
+
+
+
+
+애너테이션(annotation)
+1. 애너테이션이란?
+   - 주석, 주해
+   - 목적 : 정보 전달!
+
+2. 표준 애너테이션 : JDK 에 기본 포함된 애너테이션
+   - @Deprecated : 추후 제거될 가능성이 있으므로 사용을 자제해라 라는 정보 전달
+   - @Override : 정보 전달 대상 > 컴파일러, 정보 : 재정의된 메서드임을 전달
+   - @SuppressWarning : 경고 출력 배제
+
+3. 메타 애너테이션 : 애너테이션을 정의할 때 사용되는 애너테이션
+   - @Taget
+   - @Retention
+
+   ※ 참고)
+      * 메타 인지 ? 지식의 지식 -> 지식을 만들 수 있는 지식
+

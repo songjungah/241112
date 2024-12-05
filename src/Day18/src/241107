@@ -1,0 +1,147 @@
+애너테이션(annotation)
+1. 애너테이션이란?
+   - 주석, 주해
+   - ★목적 : 정보 전달!
+
+2. 표준 애너테이션 : JDK 에 기본 포함된 애너테이션
+   - @Deprecated : 추후 제거될 가능성이 있으므로 사용을 자제해라 라는 정보 전달
+   - @Override : 정보 전달 대상 > 컴파일러, 정보 : 재정의된 메서드임을 전달
+   - @SuppressWarning : 경고 출력 배제
+   - @FunctionInterface
+
+3. 메타 애너테이션 : 애너테이션을 정의할 때 사용되는 애너테이션
+   - @Taget : 애노테이션을 적용할 대상
+      ElementType
+
+   - @Retention : 정보를 전달하는 시점
+      RetentionPolicy
+	- SOURCE : 자바(java)파일에는 애노테이션 정의가 유지, 컴파일된 파일(class)에서는 제거
+		 : 컴파일러가 정보를 확인
+
+	- CLASS : 기본값
+	           : 자바(java) 파일에서도 애노테이션 정의 유지, 컴파일된 파일(class)에서도 유지
+	           : 정보 전달 X / 사용을 거의 안함
+
+	- RUNTIME : 자바(java) 파일에서도 애노테이션 정의 유지, 컴파일된 파일(class)에서도 유지
+		   : 실행 중에 정보가 전달된다!
+
+   ※ 참고)
+      * 메타 인지 ? 지식의 지식 -> 지식을 만들 수 있는 지식
+
+4. 사용자 정의 애너테이션
+
+* 애너테이션 정보 확인
+   - Class 클래스 객체를 통해서 확인 가능!
+
+* 애노테이션 정의 -> 컴파일시 다음처럼 변환
+   @interface MyAnno {
+
+   }
+
+   public interface MyAnno extends java.lang.annotation.Annotation {
+
+   }
+
+
+
+
+컬렉션 프레임워트(Collection Framework)
+
+* 컬랙션(Collection) : 데이터 군집
+* 프레임워크(Framework) : 표준화된 설계
+
+* 데이터 군을 다루는데 필요한 클래스를 표준화서 설계
+
+* 데이터 : 자료
+* 자료구조
+
+* 많은 데이터 - 데이터베이스(DBMS)
+
+* CRUD 작업이 주된 작업
+   - C : Create > 데이터 추가
+   - R : Read > 데이터 조회
+   - U : Update > 데이터 수정
+   - D : Delete > 데이터 삭제
+
+1. 컬렉션 프레임워크 핵심 인터페이스
+Collection
+ 1) List
+   - 순차자료 구조
+   - 순서가 있는 자료 구조 / ex) 배열
+
+   * 추가 - 메서드
+   - void add(int index, E e)
+   - boolean add(E e)
+   - boolean add(int index, Collection ...)
+   - boolean add(Collection ...)
+
+   * 조회 - 메서드
+   - E get(int index)
+
+   * 수정 - 메서드
+   - boolean set(int index, E e)
+
+   * 삭제
+   - E remove(int index)
+   - boolean remove(Object o)
+
+   * 기타 - 메서드
+   - int indexOf(Object o) : o 요소의 위치 번호(왼쪽 -> 오른쪽), 없으면 -1
+   - int lastIndexOf(Object o) : o 요소의 위치 번호(오른쪽 -> 왼쪽), 없으면 -1
+   - int size( ) : 요소의 갯수
+
+   * 구현 클래스
+   - ArrayList
+      : 1차원 배열(벡터)을 구현한 클래스
+      : 조회속도는 빠르다
+      : 순서가 변경되는 변경 사항(추가, 수정, 삭제)이 많으면 성능 저하!
+      (매번 새로운 배열이 만들어지므로)
+      : 스택 구조에 가장 적합
+
+   - LinkedList
+
+   - Stack
+      : E pop( ) - 마지막 요소 꺼내기
+      : E push(E e) - 끝에 추가
+
+   - Vector
+
+
+   2) Set
+   - 집합자료 구조
+   - ★중복을 허용하지 않는 자료 구조 / 기준 - equals and hashCode 메서드
+   - ★순서는 고려하지 않는다(순서 결정 불가)
+
+   - A : 3, 4, 1, 2, 5
+   - B : 6, 7, 3, 4, 5, 10
+   - A와 B의 합집합 : 3, 4, 1, 2, 5, 6, 7, 10   /    1, 2, 3, 4, 5, 6, 7, 10
+
+   * 추가
+   - boolean add(E e)
+   - boolean addAll(Collection...)
+
+   * 제거
+   - boolean remove(Object o)
+   - boolean removeAll(Collection...)
+
+   * 기타
+   - int size( ) : 요소의 갯수
+
+   * 구현 클래스
+   - HashSet
+   - TreeSet
+
+
+   3) Map
+   - 사전 자료 구조 / 조회(검색)가 목적!
+   - 키, 값 쌍으로 구성된 데이터
+   - 키 : 값을 찾기위한 키워드 (중복을 허용하지 않는 자료구조 - set(집합))
+	> 중복을 허용하지 않는 이유? 값을 빠르게 찾기 위한 목적
+   - 값 : 값은 중복 가능(Collection...)
+
+
+2. Stack과 Queue
+
+3. Iterator, Listiterator, Enumeration
+
+4. Comparator 와 Comparable

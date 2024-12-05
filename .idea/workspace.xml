@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241203 Day35">
-      <change afterPath="$PROJECT_DIR$/src/Day36/241204" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day36/Example1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day36/Example2.java" afterDir="false" />
+    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241205 Day37">
+      <change afterPath="$PROJECT_DIR$/src/Day01/src/241015" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day02/src/241016" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day03/src/241017" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day04/src/241018" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day35/241203_프로젝트 생성.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day35/241203_프로젝트 생성.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day37/241205_정리.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day37/241205_정리.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +289,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733227799862</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="241204 Day36">
+      <option name="closed" value="true" />
+      <created>1733312874344</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733312874344</updated>
+    </task>
+    <task id="LOCAL-00017" summary="241205 Day37">
+      <option name="closed" value="true" />
+      <created>1733396076175</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1733396076175</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -306,6 +323,8 @@
     <MESSAGE value="241128 Day32" />
     <MESSAGE value="241202 Day34" />
     <MESSAGE value="241203 Day35" />
-    <option name="LAST_COMMIT_MESSAGE" value="241203 Day35" />
+    <MESSAGE value="241204 Day36" />
+    <MESSAGE value="241205 Day37" />
+    <option name="LAST_COMMIT_MESSAGE" value="241205 Day37" />
   </component>
 </project>

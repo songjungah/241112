@@ -1,0 +1,182 @@
+컬렉션 프레임워트(Collection Framework)
+
+* 컬랙션(Collection) : 데이터 군집
+* 프레임워크(Framework) : 표준화된 설계
+
+* 데이터 군을 다루는데 필요한 클래스를 표준화서 설계
+
+* 데이터 : 자료
+* 자료구조
+
+* 많은 데이터 - 데이터베이스(DBMS)
+
+* CRUD 작업이 주된 작업
+   - C : Create > 데이터 추가
+   - R : Read > 데이터 조회
+   - U : Update > 데이터 수정
+   - D : Delete > 데이터 삭제
+
+1. 컬렉션 프레임워크 핵심 인터페이스
+Collection
+ 1) List
+   - 순차자료 구조
+   - 순서가 있는 자료 구조 / ex) 배열
+
+   * 추가 - 메서드
+   - void add(int index, E e)
+   - boolean add(E e)
+   - boolean add(int index, Collection ...)
+   - boolean add(Collection ...)
+
+   * 조회 - 메서드
+   - E get(int index)
+
+   * 수정 - 메서드
+   - boolean set(int index, E e)
+
+   * 삭제
+   - E remove(int index)
+   - boolean remove(Object o)
+
+   * 기타 - 메서드
+   - int indexOf(Object o) : o 요소의 위치 번호(왼쪽 -> 오른쪽), 없으면 -1
+   - int lastIndexOf(Object o) : o 요소의 위치 번호(오른쪽 -> 왼쪽), 없으면 -1
+   - int size( ) : 요소의 갯수
+
+   * 구현 클래스
+   - ArrayList
+      : 1차원 배열(벡터)을 구현한 클래스
+      : 조회속도는 빠르다
+      : 순서가 변경되는 변경 사항(추가, 수정, 삭제)이 많으면 성능 저하!
+      (매번 새로운 배열이 만들어지므로)
+      : 스택 구조에 가장 적합
+
+   - LinkedList
+      : 다음 요소, 이전 요소에 대한 주소로 연결 된 구조
+      : 순서가 변경되는 삭제, 추가도 빠르게 처리
+      : ArrayList 보다는 속도는 느리다
+      : Queue 의 구현체
+	- boolean offer(E e) : 끝에 추가
+	- E poll( ) : 앞에서 꺼내기
+
+   - Stack
+      : E pop( ) - 마지막 요소 꺼내기
+      : E push(E e) - 끝에 추가
+
+   - Vector
+      : ArrayList 와 구조가 비슷
+      : 쓰레드 안정성
+
+
+   2) Set
+   - 집합자료 구조
+   - ★중복을 허용하지 않는 자료 구조 / 기준 - equals and hashCode 메서드
+   - ★순서는 고려하지 않는다(순서 결정 불가)
+
+   - A : 3, 4, 1, 2, 5
+   - B : 6, 7, 3, 4, 5, 10
+   - A와 B의 합집합 : 3, 4, 1, 2, 5, 6, 7, 10   /    1, 2, 3, 4, 5, 6, 7, 10
+
+   * 추가
+   - boolean add(E e)
+   - boolean addAll(Collection...)
+
+   * 제거
+   - boolean remove(Object o)
+   - boolean removeAll(Collection...)
+
+   * 기타
+   - int size( ) : 요소의 갯수
+
+   * 구현 클래스
+   - HashSet
+   - TreeSet : 정렬 기능이 추가
+
+
+   3) Map
+   - 사전 자료 구조 / 조회(검색)가 목적!
+   - 키, 값 쌍으로 구성된 데이터
+   - 키 : 값을 찾기위한 키워드 (중복을 허용하지 않는 자료구조 - set(집합))
+	> 중복을 허용하지 않는 이유? 값을 빠르게 찾기 위한 목적
+   - 값 : 값은 중복 가능(Collection...)
+
+   * 추가 / 수정
+   - V put(K key, V value);
+   - V putIfAbsent(K key, V value); > key 값이 없을때만 value 값을 추가
+   - boolean putAll(Map ...)
+
+   * 조회
+   - V get(Object key)
+   - V getOrDefalut(Object key, V defalutValue); > key 로 조회했을 때 값이 없으면 defaultValue 로 기본값 대체
+
+   * 삭제
+   - V remove(Object key)
+   - boolean remove(Object key, Object value) > 현재 key로 조회된 value 와 값을 비교하고 일치할 때 삭제
+
+   * 기타
+   - clear( ) : 전체 비우기
+   - int size( ) : 요소의 갯수
+   - boolean containsKey(Object key) : key 값이 있는지 체크
+   - boolean containsValue(Object key) : value 값이 있는지 체크
+
+   * Set<K> keySet( ) : key 값 목록
+   * Collection<V> values( ) : Value값 목록
+   * Set<Map.Entry<K,V>> entrySet( ) : Key-Value 쌍 목록
+
+   * 구현 클래스
+   - HashMap
+
+   - TreeMap : Key 값의 정렬 기능 추가
+
+
+2. Stack과 Queue
+
+3. Iterator, Listiterator, Enumeration
+* Iterator : 반복자 패턴 구현 예
+   - 반복을 다 하면 다시 반복 불가
+   - boolean hasNext( ) : 다음 요소가 있는지 체크
+   - E next( ) : 현재 요소 반환, 다음 위치로 이동
+   - Collection 인터페이스 iterator( ) 메서드
+
+* ListIterator : List 인터페이스에 정의
+   - 순서의 특징을 가지고 있는 반복자
+   - 순방향, 역방향
+
+* Enumeration : 반복자 패턴 구현 예 - JDK 1.0
+   - boolean hasMoreElements( )
+   - E nextElement( )
+
+4. Comparator 와 Comparable
+
+* java.lang.Comparator : 기본 정렬 기준 / Natural Order > 기본 오름차순
+
+   int compareTo(T o) : JDK 기본 클래스에서는 보통 final 로 정의된 경우가 많다! 변경 불가 경우가 많다.
+
+   - 반환값 : 음수 > 현재 요소를 앞에 배치
+	  : 양수 > 현재 요소를 뒤에 배치
+	  : 0 > 제자리
+
+   > 현재 대상 - 비교 대상 : 오름차순 정렬
+   > 비교 대상 - 현재 대상 : 내림차순 정렬
+
+   > (현재 대상 - 비교대상) * -1 : 내림차순
+   > -(현재 대상 - 비교대상) : 내림차순
+
+* java.util.Comparator<T> : 대안적 기준	// 정의하는 일은 거의 없음
+   - int Compare(T o1, T o2);
+
+
+
+객체지향 설계 5대 원칙
+1. SOLID
+   * S - Single Resposibility Principle : 단일 책임 원칙
+       - 하나의 클래스는 하나의 역활을 담당한다.
+
+   * O - Open and Close : 개방 폐쇄 원칙 / 전략 패턴
+   * L - 리스코프 치환원칙 / 하위 클래스는 상위 클래스로 상위 클래스는 하위 클래스로 변경 가능(다형성)
+   * I - 인터페이스 분리 원칙
+   * D - 의존 역전 원칙
+        - 구체화에 의존하지 말고 추상화에 의존해야
+        - LinkedList<String> items = new LinkedList( ) => X
+        - List<String> items = new LinkedList<>( ) => O
+        - 교체, 변경 유연성

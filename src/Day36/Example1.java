@@ -20,7 +20,7 @@ public class Example1 { // class s
         }
         // ==========================
 
-        System.out.println(지역번수);       // 오류 발생 - 지역을 벗어나있기 때문
+        // System.out.println(지역번수);       // 오류 발생 - 지역을 벗어나있기 때문
 
         System.out.println(전역변수);
 
@@ -29,7 +29,7 @@ public class Example1 { // class s
         임의함수(10);
             // int 매개변수1 = 10;
 
-        System.out.println(멤버변수);       // 오류 발생 - 객체의 멤버이므로 안됨
+        // System.out.println(멤버변수);       // 오류 발생 - 객체의 멤버이므로 안됨
         Example1 객체 = new Example1();
         System.out.println(객체.멤버변수);    // 객체를 이용한 멤버변수 호출/접근
 

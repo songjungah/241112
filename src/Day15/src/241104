@@ -1,0 +1,123 @@
+★ 컴파일러가 자동으로 코드를 추가해주는 부분
+1) import java.lang.*
+2) extends java.lang.Object -> 모든 클래스는 Object 하위 클래스
+3) 기본 생성자
+4) super( ) -> 상속에 필요함
+5) 인터페이스 메서드 앞에 public abstract
+6) 인터페이스 정의된 변수, public static final
+7) 지역 내부 클래스, 지역 변수의 상수화, final
+8) 참조 변수를 출력했을 때, 자동으로 참조변수.toString( )
+
+
+
+* java.lang 패키지
+- 기본적으로 많이 사용하는 클래스들이 포함
+ex) String
+   java.lang.String
+
+
+* Object 클래스
+   - 모든 클래스의 상위 클래스
+   - 상속이 명시 X -> extends java.lang.object 가 추가(컴파일러)
+
+* Object 클래스에 정의된 메서드
+1. toString( ) 메서드
+   public String toString( ) {
+	return getClass( ).getName( ) + "@" + Integer.toHexString (hashCode());
+}
+
+
+※ 참고)
+Object
+   - Class<?> getClass( ) : 클래스 내부의 인스턴스 메서드에서 Class 클래스 객체를 접근
+   - Class 클래스 객체 : 클래스의 정보가 담겨 있는 객체
+
+2. equals( ) 메서드
+   public looean equals(Object obj) {
+	return (this == obj);
+}
+
+* 동일성 비교(주소) : ==
+* 동등성 비교 : boolean equals( )and int hashCode( ) 재정의한다.
+   - 중복을 제거할 경우 동등성 비교를 내부에서 많이 하게된다!
+
+   ★ 비교
+   - 동일성 : 물리적으로 동일한 개체
+   - 동등성 : 동등한 가치 (가치 판단 필요) / 개발자마다 다른 기준으로 동등성을 판단
+
+* String str = "값";
+  Strung str2 = new String("...");
+
+
+3. hashCode( ) 메서드 : 객체의 검색이 목적
+   - 기본 구현 : 객체의 주소값
+   -> equals 와 함게 동등성 비교를 위한 재정의
+
+hash : 같은 값에 대하여 같은 정수 값을 생성
+
+* java.util.Objects :
+	hash(Object... values)
+
+
+
+String 클래스
+1. String을 선언하는 두가지 방법
+   - String str = "문자열";
+   - String str = new String("문자열");
+
+2. String 클래스의 final char[ ] 변수	// JDK11
+   - 최근 : final byte[ ]
+   - 문자열은 불면하는 특징
+   - 매번 문자열 추가 -> 새로운 객체가 만들어진다 -> 성능 저하
+
+3. StringBuffer 와 StringBuilder 클래스 활용하기
+   - 버퍼 : 임시 메모리 ( byte[ ] )
+
+* 문자열 가감이 많은 경우 사용
+   - StringBuffer : 쓰레드 안정성(동시성 작업시 안전)
+   - StringBuilder : 쓰레드 안정성 X (동시성 작업시 문제)
+
+* 반환값이 this : 동일한 객체를 반환 -> ★메서드 체이닝 기법 의도
+
+
+
+Wrapper 클래스
+- 기본 자료형을 위한 클래스
+   * 기본 자료형
+   - 정수 : byte, short, int, long
+   - 실수 : float, double
+   - 논리 : boolean
+   - 문자 : char
+
+   * 재료가 되는 값
+
+1. Wrapper 클래서의 종류
+- 기본 자료형의 값 -> 기능X
+- 기본 자료형의 값을 처리하는 편의 기능 클래스
+
+byte -> Byte 클래스
+short -> Short 클래스
+int -> Integer 클래스
+long -> Long 클래스
+
+float -> Float 클래스
+double -> Double 클래스
+
+booleng -> Boolean 클래스
+char -> Character 클래스
+
+
+class Integer {
+  ...
+
+   private final int value;
+
+  ...
+
+}
+
+
+
+
+
+

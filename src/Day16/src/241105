@@ -1,0 +1,96 @@
+1. Wrapper 클래서의 종류
+- 기본 자료형의 값 -> 기능X
+- 기본 자료형의 값을 처리하는 편의 기능 클래스
+
+byte -> Byte 클래스
+short -> Short 클래스
+int -> Integer 클래스
+long -> Long 클래스
+
+float -> Float 클래스
+double -> Double 클래스
+
+booleng -> Boolean 클래스
+char -> Character 클래스
+
+
+2. Integer 클래스 사용하기
+
+   1) Integer 클래스의 메서드
+   static int parselnt(...) : 문자열 숫자 -> int 형 숫자로 변환
+   static integer valueOf(int i)
+   static integer valueOf(String str)
+
+   * 숫자형 Wrapper 클래스
+   - Wrapper 클래스 객체 -> 기본형 변환
+   - 기본 자료형 parse자료형 (문자열로 된 숫자, 다른 범위 숫자)
+
+   * 기본형 -> Wrapper 클래스 객체
+   - Wrapper 클래스 자료형 valueOf (기본 자료형 값 또는 문자열)
+
+
+3. 오토박싱과 언박싱
+   - 연산(+,-,*,/ ...) : 기본 자료형만 가능한 연산, 같은 자료형끼리만 가능
+
+
+
+Class 클래스
+- 클래스의 정보가 담겨있는 객체가 자동 생성 > Class 클래스 객체
+
+1. Class 클래스를 선언하고 클래스 정보를 가져오는 방법
+   1) 모든 클래스의 정적 변수 class
+   2) Object 클래스의 정의된 getClass( )
+      - 인스턴스 메서드 내부에서 현재 생성된 객체의 Class 클래스 객체를 접근 할 때
+
+2. Class 클래스를 활용해 클래스 정보 알아보기
+
+3. Class.forName( )을 사용해 동적 로딩 하기
+   - 일반적으로 클래스의 자원은 로드시에 클래스 로더에 의해서 다 초기에 구성
+   - 원격에서 제공받은 클래스 자원을 과정중에 로드하는 경우
+
+
+
+지네릭스
+1. 지네릭스란? - JDK5
+   1) 지네릭 클래스
+   2) 지네릭 메서드
+
+
+※ 참고)
+- 다양한 자료형을 수용 -> Object 클래스 사용
+   * 단점 1) 타입 안정성 X	2) 형변환의 번거로움
+
+
+2.지네릭 클래스의 선언
+
+* 컴파일 시
+public class Box {
+   private Object item;
+
+   public void setitem(Object item) {
+	this.item = item;
+   }
+
+   public Object getitem( ) {
+	return item;
+   }
+}
+=> 컴파일 완료
+-> ★자료형이 결정되는 시점 : 객체를 생성할 때 타입 힌트<Apple> 를 가지고 알 수 있다!
+
+
+3. 지네릭스의 용어
+   1) 지네릭 클래스
+      class Box<T> { ... }
+   2) 타입변수 T
+   3) 원시타입 Box
+
+4.
+
+5. 지네릭 클래스의 객체 생성과 사용
+
+6. 제한된 지네릭 클래스
+   <T extends 타입> -> T는 타입의 하위 클래스
+   <T extends 타입1 & 타입2> -> T는 타입1의 하위 클래스이고 타입2 인터페이스의 구현 클래스
+
+7. 와일드 카드

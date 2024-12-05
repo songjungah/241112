@@ -1,0 +1,68 @@
+김현수
+010 3913 2072
+
+-------------------------------
+
+* 깃허브
+- 본인 코드를 온라인 저장
+- pc 변동에 따라 본인 코드를 사용
+- 다른 사람과 코드를 같이 쳐야(협업) 기능 가능 > git
+
+1. 구글에 '깃허브' 검색
+2. 회원가입(구글) > 구글, 이메일 등 : https://github.com/signup
+3. 로그인
+4. 카톡방에 아이디 제출 : https://github.com/본인아이디
+
+-----------------------------
+
+* 인텔리제이(jdk 17) 프로젝트 생성
+	1. new project
+	2. 프로젝트명 작성
+	3. location : D / C ~~
+	4. build system : intellij
+	5. jdk : 17
+	[ create ]
+	6. src 폴더 - Day21 패키지 생성 - Example Class 생성
+
+* 인텔리제이와 깃허브 연동
+★ 1. 해당 PC GITHUB 설치
+    2. 상단 메뉴 -> File 탭 클릭 -> Setting 클릭
+    3. 사이드바 메뉴 -> Plugis 클릭 -> github 검색
+    4. Github Actions Manager 설치 -> 재시작
+
+★ 1. 인텔리제이에서 깃허브 로그인
+    2. File탭 클릭 -> Setting 클릭
+    3. 검색창 github 검색 -> GitHub 클릭
+    4. + 누르고 Log in via GitHub 클릭
+    5. 로그인 후 (authorize in github)
+    6. 현재 프로젝트를 로그인 깃허브 계정에 배포하기
+
+★ [ 배포자 서명 ]
+    1. alt + f12 > 터미널 열기
+    2. 화살표 누르고 Git Bash 클릭
+    3. git config user.name "이름"
+    4. git config user.email "이메일"
+
+★ 1. 상단 메뉴 > VCS 클릭
+    2. Share project on GITHUB 클릭
+    - Reoisitory name(깃 저장소 이름) : 프로젝트명 동일, 임의
+    - [private] 체크 해제
+    - 아이디 입력하고 share 입력
+    3. 최초 컴밋(깃허브 올리기)
+
+
+
+
+* 과제
+* 제출 : itdanja@kakao.com 에 내일 19:00까지 제출
+
+1. 어려운분들 : BoardService_1 / 2 코드를 따라치기 > 5번씩 작성 후 제출!
+2. 활용하실 분들 : BoardServiceTest1
+ - 내용[String 타입]과 작성자[String 타입] 과 비밀번호[int 타입] 로 구성된 게시물 클래스를 설계
+ - 조건 : main 함수 1개와 배열은 최대 1개까지 사용하여 구현
+ - 구축 : 게시물 쓰기 와 게시물 출력 기능 구현
+
+
+* 앞으로 git 세팅 업로드
+- commit 누르고 내용적고 commit and push > 다음에 commit
+- commit :  / push : 업로드
