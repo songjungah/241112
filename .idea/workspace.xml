@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241205 Day37">
-      <change afterPath="$PROJECT_DIR$/src/Day37/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day37/Obj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day38/Dao/BoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day38/Dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day38/Dao/MemberDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day37/241205_정리.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day37/241205_정리.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733397920576</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="241205 Day37">
+      <option name="closed" value="true" />
+      <created>1733399826514</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1733399826514</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
