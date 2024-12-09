@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241206 Day38" />
+    <list default="true" id="e9d96054-3095-4357-a893-4b1e9f2cdb17" name="Changes" comment="241206 Day38">
+      <change afterPath="$PROJECT_DIR$/src/Day39/1_HTML 시작.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day39/2_멀티미디어.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day39/3_HTML 과제1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,30 +48,31 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BoardService_7.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day25.boardservice_9mvc.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day26.TodoList.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day29.boardservice10mvc.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day31.boardservice_11mvc.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileExample3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/송정아/241112/src/Day31&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AppStart.executor": "Run",
+    "Application.BoardService_1.executor": "Run",
+    "Application.BoardService_3.executor": "Run",
+    "Application.BoardService_6.executor": "Run",
+    "Application.BoardService_7.executor": "Run",
+    "Application.Day25.boardservice_9mvc.AppStart.executor": "Run",
+    "Application.Day26.TodoList.AppStart.executor": "Run",
+    "Application.Day29.boardservice10mvc.AppStart.executor": "Run",
+    "Application.Day31.boardservice_11mvc.AppStart.executor": "Run",
+    "Application.FileExample.executor": "Run",
+    "Application.FileExample3.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/송정아/241112/src/Day31",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\송정아\241112\src\Day31" />
@@ -338,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733484615722</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="241206 Day38">
+      <option name="closed" value="true" />
+      <created>1733489449828</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1733489449828</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
